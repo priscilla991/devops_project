@@ -21,7 +21,7 @@ pipeline {
       }
     }
     stage('Run Docker container') {
-      steps { sh 'docker run --rm $DOCKER_IMAGE' }
+      steps { sh 'docker run -it $DOCKER_IMAGE' }
     }
   }
 }
